@@ -1,0 +1,9 @@
+<h1>Listado contactos</h1>
+<table border="2">
+  <tr *ngFor="let contacto of datos">
+    <td>{{contacto.nombre}}</td>
+    <td>{{contacto.cif}}</td>
+    <td>{{contacto.direccion}}</td>
+    <td>{{contacto.grupo}}</td>
+  </tr>
+</table>
