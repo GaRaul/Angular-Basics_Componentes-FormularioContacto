@@ -15,10 +15,9 @@ export class AppComponent {
   mensaje: any;
   respuesta: number = 0;
 
-  contactos: any;
+  contactos = [{nombre: 'lala', email: 'lala@gmail.com', mensaje: 'lalalalalal', respuesta: 5}]
 
   guardarContacto(){
-    this.contactos.push(this.nombre, this.email, this.mensaje, this.respuesta);
-    this.listaContactos.guardar(this.contactos);
+    this.listaContactos.guardar(this.nombre, this.email, this.mensaje, this.respuesta);
   }
 }

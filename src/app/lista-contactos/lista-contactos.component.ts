@@ -14,8 +14,8 @@ export class ListaContactosComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  guardar(contactos: any){
-    this.datos.push(contactos);
+  guardar(nombre: any, email: any, mensaje: any, respuesta: number){
+    this.datos.push(nombre, email, mensaje, respuesta);
   }
 
 }
